@@ -1,0 +1,76 @@
+body{
+    background-color:lightblue;
+    
+    }
+
+    .tittle{
+      font-size: 26px;
+      font-weight: 50;
+      color: white;
+      margin: 30px;
+    }
+
+  
+    .box{
+    box-sizing: border-box;
+    width: 1000px;
+    height: 1000px;
+    padding: middle;
+    }
+   
+    .txtfield{
+        max-width: 400px;
+        width: 100%;
+        background-color: #f0f0f0;
+        margin: 10px 0;
+        height: 50px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 15% 85%;
+        padding: 0 0.4rem;
+        position: relative;
+        border :2px solid rgb(89,149,253);
+      }
+      
+      .placeholder {
+        color: #aaa;
+        font-weight: 500;
+      }
+
+      .button {
+          position: relative;
+          background-color: rgb(89,149,253);
+          border :2px solid rgb(89,149,253);
+          border-radius: 50px;
+          font-size: 28px;
+          color: #ffff;
+          padding: 10px;
+          width: 200px;
+          text-align: center;
+          -webkit-transition-duration: 0.4s; /* Safari */
+          transition-duration: 0.4s;
+          text-decoration: ;
+          overflow: hidden;
+          cursor: pointer;
+        }
+
+      .button:after {
+        content: "";
+        background: #90EE90;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+
+      .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+        
